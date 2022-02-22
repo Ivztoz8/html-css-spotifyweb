@@ -22,6 +22,10 @@ main{
     flex-direction: row;
 }
 
+ul li {
+    list-style-type: none;
+}
+
 /* Header Section */
 
 .uppercase{
@@ -48,6 +52,8 @@ main{
     background-color: #1B1D27;
 }
 
+
+
 /* Site for XS device */
 
 @media screen and (max-width: 576px){
@@ -72,7 +78,7 @@ main{
         border: 1px solid white;
         border-radius: 50px;
         color: white;
-        margin-top: 3%;
+        margin-top: 5%;
         margin-right: 2%;
         margin-bottom: 3%;
         padding: 2% 4%;
@@ -82,18 +88,27 @@ main{
     .sidebar{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
         flex-basis: 40px;
-        height: 100vh;
+        height: calc(100vh - 6vh);
         background-color: black;
         border: 1px solid blue;
     }    
+
+    .sidebar_container{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 39px;
+        height: auto;
+        border: 1px solid lime;
+    
+    }
 
     .footerbar{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        width: 100vw;
+        flex-basis: 100vw;
         height: 6vh;
         background-color: gray;
     }
@@ -111,8 +126,69 @@ main{
         display: flex;
         flex-direction: row;
         flex-basis: 100vw;
-        height: 94vh;
+        height: calc(100vh - 12vh);
         background-color: rgb(27, 29, 39);
         border: 1px solid firebrick;
+    }
+
+    .bottomicon{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 40px;
+        height: 40px;
+        border: 1px solid salmon;
+    }
+    .mainmenucontainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: calc(100vw - 39px);
+        height: 4vh;
+        border: 1px solid peachpuff;
+        padding: 4%;
+    }
+
+    .fontmenu{
+        display: flex;
+        flex-direction: row;
+        color: gray;
+        font-weight: bold;
+        font-size: 0.5em;
+        margin: 2px;
+
+    }
+    
+    .hunderselect{
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .underselect:hover{
+        border-bottom:1px solid limegreen;
+    }
+
+    .mainmenurow{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: calc(100vw - 39px);
+        height: auto;
+        border: 1px solid peachpuff;
+        flex-wrap: wrap;
+    }
+    .margintop1{
+        margin-top: 10px;
+    }
+
+    .windowsong{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .imgsize{
+        width: 45%;
+        height: 25%;
     }
 }
