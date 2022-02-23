@@ -95,7 +95,7 @@ nav{
     font-size: 0.9em;
 }
 
-/* Site for XS device, default, size < 576px */
+/* Web App for XS device, default, size < 576px */
 
 .upgradebar{
     display: flex;
@@ -463,4 +463,29 @@ nav{
     justify-content: center;
     align-items: center;
     margin-left: 2px;
+  }
+
+ /* Web App for S device,  size >= 576px */
+
+  @media screen and (min-width: 576px){
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 200px;
+        height: calc(100vh - 10vh);
+        background-color: black;
+        }  
+
+        .bottomicon1{
+        display: none;
+        }
+        .bottomiconbig{
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: auto;
+        margin: 3px auto;
+        }
   }
