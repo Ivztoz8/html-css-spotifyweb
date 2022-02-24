@@ -33,6 +33,16 @@ nav{
     align-content: center;
 }
 
+
+
+div.txtcontainer > span > a{
+    color: gray;
+}
+
+div.txtcontainer > span > a:hover{
+    color: white;
+    text-decoration:underline;
+}
 /* Utility */
 .uppercase{
     text-transform:uppercase;
@@ -79,6 +89,10 @@ nav{
     font-size: 1.2em;
 }
 
+.size:hover{
+    font-size: 1.4em;
+}
+
 .colorgraygray{
     color: #2C2C2C;
 }
@@ -93,6 +107,10 @@ nav{
 
 .sizesm{
     font-size: 0.9em;
+}
+
+.colorgray1{
+    color: gray;
 }
 
 /* Web App for XS device, default, size < 576px */
@@ -122,12 +140,17 @@ nav{
     padding: 10px 5px;    
 }
 
+#upgradebutton:hover{
+    flex-basis: 185px;
+    height: 4.1vh;
+}
+
 .sidebar{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    flex-basis: 40px;
+    align-items: flex-start;
+    width: 40px;
     height: calc(100vh - 10vh);
     background-color: black;
 }    
@@ -135,8 +158,55 @@ nav{
 .sidebar_container{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     flex-basis: 39px;
     height: auto;
+    margin-left: 5px;
+}
+
+.sidebar_container1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-basis: 39px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.captionsidebar{
+    display: none;
+}
+
+.captionsidebar1{
+    display: none;
+}
+
+.captionsidebarmiddle{
+    display: none;
+}
+
+.captionsidebar2{
+    display: none;
+}
+
+.iconcontainer3{
+    display: none;
+}
+
+.playlist{
+    display: none;
+}
+
+.playlistcontainer{
+    display: none;
+}
+
+.plus{
+    display: none;
+}
+
+.playlist1{
+    display: none;
 }
 
 .main_container{
@@ -216,10 +286,10 @@ nav{
     font-size: 0.6em;
     padding: 1%;
     margin-left: 2%;
-
 }
     
 .fontmenu:hover{
+    color: white;
     border-bottom:1px solid limegreen;
 }
 
@@ -299,7 +369,29 @@ nav{
     padding: 3px;
 }
 
+
+
+.plus:hover{
+    color: white;
+}
+
+.playlist1:hover{
+    color: white;
+}
+
 /* Footer */
+
+.fa-folder:hover{
+    color: white;
+}
+
+.fa-heart:hover{
+    color: white;
+}
+
+footer{
+    display: fixed;
+}
 
 .footerbar{
     display: flex;
@@ -382,7 +474,6 @@ nav{
     height: auto;
     color: gray;
     font-size: 0.5em;
-    line-height: 15px;
 }
 
 .imgcontainer1{
@@ -420,6 +511,20 @@ nav{
     border-radius: 10px;
 }
 
+.footertimebarc1a:hover{
+    display: flex;
+    width: 80%;
+    height: 0.5vh;
+    background-color: gray;
+    margin: 0 4px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.footertimebarc1:hover{
+    background-color: lime;
+}
+
 .footertimebarc2{
     display: flex;
     width: 10%;
@@ -445,6 +550,27 @@ nav{
     background-color: rgb(35, 35, 35);
 }
 
+.footertimebarc3:hover{
+    background-color: lime;
+}
+
+.footertimebarcpointer{
+    display: flex;
+    width: 3%;
+    height: 0.5vh;
+    background-color: gray;
+    align-self: center;
+}
+
+.footertimebarcpointer:hover{
+    display: flex;
+    width: 1%;
+    height: 1vh;
+    background-color: lightgray;
+    border: 8px solid lightgray;
+    border-radius: 50px;
+}
+
 .underfooterbarsection2 {
     display: flex;
     width: 50%;
@@ -465,27 +591,315 @@ nav{
     margin-left: 2px;
   }
 
- /* Web App for S device,  size >= 576px */
 
-  @media screen and (min-width: 576px){
+  /*  for XS device,  size >= 420px */
+  @media screen and (min-width: 420px){
+  .imgsize{
+    width: 180px;
+    height: 180px;
+}
+  }
+
+ /* Web App for SM device,  size >= 576px */
+
+@media screen and (min-width: 576px){
     .sidebar{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         flex-basis: 200px;
         height: calc(100vh - 10vh);
         background-color: black;
-        }  
+    }  
 
-        .bottomicon1{
+    .bottomicon1{
         display: none;
-        }
-        .bottomiconbig{
+    }
+
+    .bottomiconbig{
         display: flex;
         flex-direction: column;
         width: 100px;
         height: auto;
-        margin: 3px auto;
+        margin: 3px 0;
+    }
+
+    .iconcontainer{
+            display: flex;
+            width: max-content;
+            padding-left: 8px;
+            margin-right: 10px;
+    }
+
+    .iconcontainer:hover{
+        border-left: 2px solid limegreen;
+    }
+
+    .sidebar_container{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        width: 39px;
+        height: auto;
+    }
+
+    .sidebar_container1{
+        display: flex;
+        flex-direction:column;
+        align-items:flex-start;
+        width: 39px;
+        height: auto;
+    }
+
+    .imgsize{
+        width: 180px;
+        height: 180px;
+    }
+        
+    .caption{
+        display: flex;
+        width: 180px;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1em;
+        color: white;
+        white-space:pre-line;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+        padding: 5px;
+    }
+        
+    .caption1{
+        display: flex;
+        width: 180px;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 0.8em;
+        white-space:pre-line;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+        padding: 3px;
+    }
+        
+    .caption2{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 0.8em;
+        white-space:pre-line;
+        justify-content: flex-start;
+        text-align: center;
+        font-weight: bold;
+        padding: 3px;
+    }
+        
+    .captionsidebar{
+        display: flex;
+        width: 100%;
+        height: auto;
+        color: gray;
+        font-size: 0.8em;
+        align-items: center;
+        justify-content: end;
+        padding-left: 5px;
+    }
+
+    .captionsidebar:hover{
+        color: white;
+    }
+
+        .captionsidebar1{
+            display: flex;
+            width: 100%;
+            height: auto;
+            color: grey;
+            font-size: 0.7em;
+            align-items: center;
+            justify-content: end;
+            margin-left: 5px;
         }
-  }
+
+        .captionsidebar1:hover{
+            color: white;
+        }
+
+        .captionsidebarmiddle{
+            display: flex;
+            flex-direction: row;
+            align-self: baseline;
+            width: 120px;
+            height: 1px;
+            background-color: gray;
+            margin: 5px 0 10px 10px;
+        }
+
+        .captionsidebar2{
+            display: flex;
+            width: 100%;
+            height: auto;
+            color: white;
+            font-size: 1em;
+            align-items: center;
+            justify-content: end;
+            margin-left: 5px;
+            margin-right: 10px;
+        }
+
+        .iconcontainer3{
+            display: flex;
+            flex-direction: column;
+            width: max-content;  
+            height: auto;
+            padding-left: 8px;
+            margin-right: 10px;
+        }
+
+        .playlist{
+            display: flex;
+            width: auto;
+            height: auto;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .plus{
+            display: flex;
+            flex-direction: row;
+            width: 40px;
+            height: 40px;
+            background-color: gray;
+            font-size: 1.5em;
+            color: black;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .plus1{
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .plus1:hover{
+         color: white;
+        }
+
+        .playlistcontainer{
+            display: flex;
+            width: 100%;
+            height: auto;
+            color: gray;
+            font-size: 0.8em;
+            align-items:center;
+            font-weight: bold;
+        
+        }
+
+        .playlist1{
+            display: flex;
+            width: auto;
+            height: auto;
+            margin-top: 20px;
+            color: gray;
+            font-size: 0.8em;
+        }
+}
+
+/*  for M device,  size >= 600px */
+@media screen and (min-width: 600px){
+
+    .underfooterbarsection2 {
+        display: flex;
+        width: 30%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2px;
+      }
+
+
+    .footerbarsection{
+        display: flex;
+        width: 30%;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .footerbarsection1{
+        display: flex;
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .footerbarsection2{
+        display: flex;
+        width: 40%;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .mainmenucontainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 4%;
+        flex-wrap: wrap;
+    }
+
+    .fontmenu{
+        display: flex;
+        height: 2vh;
+        flex-direction: row;
+        color: gray;
+        font-weight: bold;
+        font-size: 0.8em;
+        padding: 3%;
+        padding-bottom: 5%;
+        margin-left: 2%;
+    }
+    
+
+    .underfooterbarsection{
+        display: flex;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2px;
+        margin: 0 5px;
+        }
+
+    .fa-heart{
+        margin-right:10px;
+        }    
+
+    .playtxt{
+        display: flex;
+        width: 100%;
+        height: auto;
+        color: white;
+        font-size: 1.2em;
+    }
+        
+    .playtxt1{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        color: gray;
+        font-size: 0.5em;
+    }
+}
