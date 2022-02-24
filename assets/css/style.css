@@ -44,6 +44,7 @@ div.txtcontainer > span > a:hover{
     text-decoration:underline;
 }
 /* Utility */
+
 .uppercase{
     text-transform:uppercase;
 }
@@ -112,6 +113,8 @@ div.txtcontainer > span > a:hover{
 .colorgray1{
     color: gray;
 }
+
+
 
 /* Web App for XS device, default, size < 576px */
 
@@ -321,6 +324,11 @@ div.txtcontainer > span > a:hover{
     padding-top: 4%;
 }
 
+.windowsong:hover{
+    filter:drop-shadow(5px 3px 3px black);
+}
+
+
 .imgsize{
     width: 150px;
     height: 150px;
@@ -389,15 +397,17 @@ div.txtcontainer > span > a:hover{
     color: white;
 }
 
-footer{
+.footercover{
     display: fixed;
+    width: auto;
+    height: auto;
 }
 
 .footerbar{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    flex-basis: 100vw;
+    width: 100vw;
     height: 10vh;
     background-color: #2B2B2B;
 }
@@ -772,8 +782,8 @@ footer{
         .plus{
             display: flex;
             flex-direction: row;
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             background-color: gray;
             font-size: 1.5em;
             color: black;
@@ -800,7 +810,14 @@ footer{
             font-size: 0.8em;
             align-items:center;
             font-weight: bold;
-        
+        }
+
+        .underplaycontainer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 25vh;
+            overflow-y: auto;
         }
 
         .playlist1{
@@ -813,6 +830,11 @@ footer{
         }
 }
 
+footer{
+    display: fixed;
+    width: auto;
+    height: auto;
+}
 /*  for M device,  size >= 600px */
 @media screen and (min-width: 600px){
 
